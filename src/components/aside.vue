@@ -2,12 +2,8 @@
 import { storeToRefs } from 'pinia';
 import { useMainStore } from '../store/main';
 import { computed } from 'vue';
-import dayjs from 'dayjs';
-import LocalizedFormat from 'dayjs/plugin/LocalizedFormat'
 import { ElMessage } from 'element-plus'
 import { ref } from 'vue'
-
-dayjs.extend(LocalizedFormat)
 
 const { isConnect } = storeToRefs(useMainStore())
 const host = ref('localhost')
@@ -17,6 +13,10 @@ const param = ref('')
 const uri = computed(() => `ws://${host.value}:${port.value}/${endpoint.value}?${param.value}`)
 const textarea = ref('')
 const store = useMainStore()
+const getTimeString = (): string => {
+    const date = new Date()
+    return `${date.getHours()}:${date.getHours()}:${date.getSeconds()}`
+}
 
 let ws: WebSocket
 const connect = () => {
@@ -28,7 +28,7 @@ const connect = () => {
     let success = true
     ws = new WebSocket(uri.value)
     ws.onmessage = event => {
-        store.addData({ message: event.data, time: dayjs().format('LTS'), sender: 'client' })
+        store.addData({ message: event.data, time: getTimeString(), sender: 'client' })
     }
     ws.onerror = () => {
         ElMessage({
@@ -61,7 +61,7 @@ const disConnect = () => {
 
 const send = () => {
     ws.send(textarea.value)
-    store.addData({ message: textarea.value, time: dayjs().format('LTS'), sender: 'user' })
+    store.addData({ message: textarea.value, time: getTimeString(), sender: 'user' })
 }
 </script>
 
