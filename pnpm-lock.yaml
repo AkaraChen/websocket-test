@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@element-plus/icons-vue': ^2.0.6
   '@vitejs/plugin-vue': ^3.0.0
   element-plus: ^2.2.9
   pinia: ^2.0.16
@@ -19,6 +20,7 @@ dependencies:
   vue: 3.2.37
 
 devDependencies:
+  '@element-plus/icons-vue': 2.0.6_vue@3.2.37
   '@vitejs/plugin-vue': 3.0.0_vite@3.0.0+vue@3.2.37
   typescript: 4.7.4
   unplugin-auto-import: 0.9.2_vite@3.0.0
@@ -63,7 +65,6 @@ packages:
       vue: ^3.2.0
     dependencies:
       vue: 3.2.37
-    dev: false
 
   /@floating-ui/core/0.7.3:
     resolution: {integrity: sha512-buc8BXHmG9l82+OQXOFU3Kr2XQx9ys01U/Q9HMIrZ300iLc8HLMgh7dcCqgYzAzf4BkoQvDcXf5Y+CuEZ5JBYg==}

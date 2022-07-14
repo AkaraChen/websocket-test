@@ -92,8 +92,13 @@ const send = () => {
     </el-card>
     <el-card style="margin-top: 20px" shadow="never">
         <div>
-            <el-input :disabled="!isConnect" v-model="textarea" :rows="2" type="textarea" />
-            <el-button @click="send" style="margin-top:10px" :disabled="!isConnect" type="primary">Send</el-button>
+            <el-form label-position="top">
+                <el-form-item label="Send message">
+                    <el-input :disabled="!isConnect" v-model="textarea" :rows="2" type="textarea" placeholder="" />
+                </el-form-item>
+                <el-button @click="send" :disabled="!isConnect" type="primary">Send
+                </el-button>
+            </el-form>
         </div>
     </el-card>
 </template>
