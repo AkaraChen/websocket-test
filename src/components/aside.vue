@@ -88,7 +88,7 @@ const send = () => {
     </el-card>
     <el-card style="margin-top: 20px" shadow="never">
         <div>
-            <el-input :disabled="!isConnect" v-model="textarea" :rows="2" type="textarea" placeholder="Please input" />
+            <el-input :disabled="!isConnect" v-model="textarea" :rows="2" type="textarea" />
             <el-button @click="send" style="margin-top:10px" :disabled="!isConnect" type="primary">Send</el-button>
         </div>
     </el-card>

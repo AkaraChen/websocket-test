@@ -7,7 +7,13 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(),
+  plugins: [vue({
+    template: {
+      compilerOptions: {
+        isCustomElement: tag => ['github-corners'].indexOf(tag) != -1
+      }
+    }
+  }),
   ElementPlus(),
   AutoImport({
     resolvers: [ElementPlusResolver()],
