@@ -5,12 +5,19 @@ import { computed } from 'vue';
 import dayjs from 'dayjs';
 import LocalizedFormat from 'dayjs/plugin/LocalizedFormat'
 import { ElMessage } from 'element-plus'
+import { ref } from 'vue'
 
 dayjs.extend(LocalizedFormat)
 
-const { host, port, endpoint, textarea, isConnect, table, param } = storeToRefs(useMainStore())
-const uri = computed(() => `ws://${host.value}:${port.value}/${endpoint.value}?${param}`)
+const { isConnect } = storeToRefs(useMainStore())
+const host = ref('localhost')
+const port = ref('8080')
+const endpoint = ref('')
+const param = ref('')
+const uri = computed(() => `ws://${host.value}:${port.value}/${endpoint.value}?${param.value}`)
+const textarea = ref('')
 const store = useMainStore()
+
 let ws: WebSocket
 const connect = () => {
     ElMessage({
@@ -62,13 +69,16 @@ const send = () => {
     <el-card shadow="never">
         <el-form label-position="top">
             <el-form-item label="Host">
-                <el-input v-model="host" placeholder="Please input" />
+                <el-input v-model="host" />
             </el-form-item>
             <el-form-item label="Port">
-                <el-input v-model="port" placeholder="Please input" />
+                <el-input v-model="port" />
             </el-form-item>
             <el-form-item label="Endpoint">
-                <el-input v-model="endpoint" placeholder="Please input" />
+                <el-input v-model="endpoint" />
+            </el-form-item>
+            <el-form-item label="Param">
+                <el-input v-model="param" />
             </el-form-item>
         </el-form>
         <el-row>

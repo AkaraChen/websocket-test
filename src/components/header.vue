@@ -13,6 +13,9 @@
 <style scoped>
 .header {
     font-size: 20px;
+}
+
+.header span {
     vertical-align: top;
 }
 </style>
