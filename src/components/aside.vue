@@ -6,11 +6,12 @@ import { ElMessage } from 'element-plus'
 import { ref } from 'vue'
 
 const { isConnect } = storeToRefs(useMainStore())
+const useWSS = ref(false)
 const host = ref('localhost')
 const port = ref('8080')
 const endpoint = ref('')
 const param = ref('')
-const uri = computed(() => `ws://${host.value}:${port.value}/${endpoint.value}?${param.value}`)
+const uri = computed(() => `${useWSS.value ? 'wss' : 'ws'}://${host.value}:${port.value}/${endpoint.value}?${param.value}`)
 const textarea = ref('')
 const store = useMainStore()
 const getTimeString = (): string => {
@@ -79,6 +80,9 @@ const send = () => {
             </el-form-item>
             <el-form-item label="Param">
                 <el-input v-model="param" />
+            </el-form-item>
+            <el-form-item label="Use WSS">
+                <el-switch v-model="useWSS" />
             </el-form-item>
         </el-form>
         <el-row>
