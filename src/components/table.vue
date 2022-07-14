@@ -20,10 +20,15 @@
 <script lang="ts" setup>
 import {
     Delete,
-    Search,
 } from '@element-plus/icons-vue'
 import { useMainStore } from '../store/main';
 
 const { table } = defineProps(['table'])
 const store = useMainStore()
 </script>
+
+<style>
+.el-form-item {
+    margin-bottom: 12px;
+}
+</style>
