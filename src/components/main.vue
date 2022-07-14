@@ -1,4 +1,5 @@
 <template>
+    <github-corners blank="true" repo="akarachen/websocket-test" />
     <el-tabs type="border-card">
         <el-tab-pane label="All">
             <Table :table="table"></Table>
