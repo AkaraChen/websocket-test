@@ -1,4 +1,5 @@
 <template>
+  <github-corners blank="true" repo="akarachen/websocket-test" />
   <el-container>
     <el-header style="height:30px">
       <Header></Header>
