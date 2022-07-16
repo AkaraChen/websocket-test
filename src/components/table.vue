@@ -15,17 +15,16 @@
                 <el-button :icon="Delete" circle @click="store.remove(scope.row.id)" />
             </template>
         </el-table-column>
-        <el-dialog v-model="dialogVisible" title="Tips" width="30%">
-            <span>{{ dialogMessage }}</span>
-            <template #footer>
-                <span class="dialog-footer">
-                    <el-button @click="dialogVisible = false">Cancel</el-button>
-                    <el-button type="primary" @click="dialogVisible = false">Confirm</el-button>
-                </span>
-            </template>
-        </el-dialog>
     </el-table>
-
+    <el-dialog v-model="dialogVisible" title="Message" width="30%">
+        <span>{{ dialogMessage }}</span>
+        <template #footer>
+            <span class="dialog-footer">
+                <el-button @click="dialogVisible = false">Cancel</el-button>
+                <el-button type="primary" @click="dialogVisible = false">Confirm</el-button>
+            </span>
+        </template>
+    </el-dialog>
 </template>
 
 <script lang="ts" setup>
@@ -37,9 +36,6 @@ const dialogVisible = ref(false)
 const dialogMessage = ref('')
 const { table } = defineProps(['table'])
 const store = useMainStore()
-const show = () => {
-
-}
 </script>
 
 <style>
