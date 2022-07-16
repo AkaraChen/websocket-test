@@ -11,20 +11,31 @@
         <el-table-column prop="message" label="Message" :show-overflow-tooltip="true" />
         <el-table-column label="Action">
             <template #default="scope">
+                <el_button :icon="Search" circle @click="dialogVisible = true" />
                 <el-button :icon="Delete" circle @click="store.remove(scope.row.id)" />
             </template>
         </el-table-column>
     </el-table>
+    <el-dialog v-model="dialogVisible" title="Tips" width="30%">
+        <span>This is a message</span>
+        <template #footer>
+            <span class="dialog-footer">
+                <el-button @click="dialogVisible = false">Cancel</el-button>
+                <el-button type="primary" @click="dialogVisible = false">Confirm</el-button>
+            </span>
+        </template>
+    </el-dialog>
 </template>
 
 <script lang="ts" setup>
-import {
-    Delete,
-} from '@element-plus/icons-vue'
+import { Delete, Search } from '@element-plus/icons-vue'
 import { useMainStore } from '../store/main';
+import { ref } from 'vue';
 
 const { table } = defineProps(['table'])
 const store = useMainStore()
+const dialogVisible = ref(false)
+const dialogMessage = ref('')
 </script>
 
 <style>
