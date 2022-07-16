@@ -8,7 +8,13 @@
                 </el-tag>
             </template>
         </el-table-column>
-        <el-table-column prop="message" label="Message" :show-overflow-tooltip="true" />
+        <el-table-column prop="message" label="Message">
+            <template #default="scope">
+                <p style="width: 300px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
+                    {{ scope.row.message }}
+                </p>
+            </template>
+        </el-table-column>
         <el-table-column label="Action">
             <template #default="scope">
                 <el-button :icon="Search" circle @click="dialogVisible = true; dialogMessage = scope.row.message" />
