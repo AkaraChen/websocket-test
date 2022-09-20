@@ -20,7 +20,7 @@
     "unplugin-auto-import": "0.9.5",
     "unplugin-element-plus": "0.4.1",
     "unplugin-vue-components": "0.22.7",
-    "vite": "3.1.2",
+    "vite": "3.1.3",
     "vue-tsc": "0.40.13",
     "wc-github-corners": "0.1.5"
   }
