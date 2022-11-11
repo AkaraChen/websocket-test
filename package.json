@@ -11,7 +11,7 @@
   "dependencies": {
     "element-plus": "2.2.20",
     "pinia": "2.0.23",
-    "vue": "3.2.44"
+    "vue": "3.2.45"
   },
   "devDependencies": {
     "@element-plus/icons-vue": "2.0.10",
