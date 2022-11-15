@@ -5,7 +5,7 @@ specifiers:
   '@vitejs/plugin-vue': 3.2.0
   element-plus: 2.2.21
   pinia: 2.0.23
-  typescript: 4.8.4
+  typescript: 4.9.3
   unplugin-auto-import: 0.11.4
   unplugin-element-plus: 0.4.1
   unplugin-vue-components: 0.22.9
@@ -16,18 +16,18 @@ specifiers:
 
 dependencies:
   element-plus: 2.2.21_vue@3.2.45
-  pinia: 2.0.23_zwu2zepfy3m6u2gunxlolp35gi
+  pinia: 2.0.23_mgnvym7yiazkylwwogi5r767ue
   vue: 3.2.45
 
 devDependencies:
   '@element-plus/icons-vue': 2.0.10_vue@3.2.45
   '@vitejs/plugin-vue': 3.2.0_vite@3.2.4+vue@3.2.45
-  typescript: 4.8.4
+  typescript: 4.9.3
   unplugin-auto-import: 0.11.4
   unplugin-element-plus: 0.4.1_vite@3.2.4
   unplugin-vue-components: 0.22.9_vue@3.2.45
   vite: 3.2.4
-  vue-tsc: 1.0.9_typescript@4.8.4
+  vue-tsc: 1.0.9_typescript@4.9.3
   wc-github-corners: 0.1.5
 
 packages:
@@ -879,7 +879,7 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /pinia/2.0.23_zwu2zepfy3m6u2gunxlolp35gi:
+  /pinia/2.0.23_mgnvym7yiazkylwwogi5r767ue:
     resolution: {integrity: sha512-N15hFf4o5STrxpNrib1IEb1GOArvPYf1zPvQVRGOO1G1d74Ak0J0lVyalX/SmrzdT4Q0nlEFjbURsmBmIGUR5Q==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
@@ -892,7 +892,7 @@ packages:
         optional: true
     dependencies:
       '@vue/devtools-api': 6.4.4
-      typescript: 4.8.4
+      typescript: 4.9.3
       vue: 3.2.45
       vue-demi: 0.13.11_vue@3.2.45
     dev: false
@@ -989,8 +989,8 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /typescript/4.8.4:
-    resolution: {integrity: sha512-QCh+85mCy+h0IGff8r5XWzOVSbBO+KfeYrMQh7NJ58QujwcE22u+NUSmUxqF+un70P9GXKxa2HCNiTTMJknyjQ==}
+  /typescript/4.9.3:
+    resolution: {integrity: sha512-CIfGzTelbKNEnLpLdGFgdyKhG23CKdKgQPOBc+OUNrkJ2vr+KSzsSV5kq5iWhEQbok+quxgGzrAtGWCyU7tHnA==}
     engines: {node: '>=4.2.0'}
     hasBin: true
 
@@ -1173,7 +1173,7 @@ packages:
       he: 1.2.0
     dev: true
 
-  /vue-tsc/1.0.9_typescript@4.8.4:
+  /vue-tsc/1.0.9_typescript@4.9.3:
     resolution: {integrity: sha512-vRmHD1K6DmBymNhoHjQy/aYKTRQNLGOu2/ESasChG9Vy113K6CdP0NlhR0bzgFJfv2eFB9Ez/9L5kIciUajBxQ==}
     hasBin: true
     peerDependencies:
@@ -1181,7 +1181,7 @@ packages:
     dependencies:
       '@volar/vue-language-core': 1.0.9
       '@volar/vue-typescript': 1.0.9
-      typescript: 4.8.4
+      typescript: 4.9.3
     dev: true
 
   /vue/3.2.45:
