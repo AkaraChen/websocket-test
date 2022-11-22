@@ -4,7 +4,7 @@ specifiers:
   '@element-plus/icons-vue': 2.0.10
   '@vitejs/plugin-vue': 3.2.0
   element-plus: 2.2.22
-  pinia: 2.0.24
+  pinia: 2.0.25
   typescript: 4.9.3
   unplugin-auto-import: 0.11.4
   unplugin-element-plus: 0.4.1
@@ -16,7 +16,7 @@ specifiers:
 
 dependencies:
   element-plus: 2.2.22_vue@3.2.45
-  pinia: 2.0.24_mgnvym7yiazkylwwogi5r767ue
+  pinia: 2.0.25_mgnvym7yiazkylwwogi5r767ue
   vue: 3.2.45
 
 devDependencies:
@@ -879,8 +879,8 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
-  /pinia/2.0.24_mgnvym7yiazkylwwogi5r767ue:
-    resolution: {integrity: sha512-DDLd4Iphyc+6PYYYbx7jkb6WP9gecgu9bz9huyB5rb7CdJI3DhzYiZI+/Ih8MLewRrP9DSpslF/BgSNrJtZU7A==}
+  /pinia/2.0.25_mgnvym7yiazkylwwogi5r767ue:
+    resolution: {integrity: sha512-3reAkjJ6bW2D5hZKRMS0c9rUbHVlsVyZd037xO0PJr2AuF/09RRSBnFLlJgmHF4Jx6dEoW/jZBOHTushY7IMlw==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
