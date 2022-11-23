@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "element-plus": "2.2.22",
-    "pinia": "2.0.25",
+    "pinia": "2.0.26",
     "vue": "3.2.45"
   },
   "devDependencies": {
