@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "element-plus": "2.2.25",
+    "element-plus": "2.2.26",
     "pinia": "2.0.27",
     "vue": "3.2.45"
   },
