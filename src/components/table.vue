@@ -22,8 +22,8 @@
             </template>
         </el-table-column>
     </el-table>
-    <el-dialog v-model="dialogVisible" title="Message" width="30%">
-        <span>{{ dialogMessage }}</span>
+    <el-dialog v-model="dialogVisible" title="Message" width="50%">
+        <div class="editor" ref="editorRef"></div>
         <template #footer>
             <span class="dialog-footer">
                 <el-button @click="dialogVisible = false">Cancel</el-button>
@@ -34,18 +34,38 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { nextTick, ref, watch } from 'vue';
 import { Delete, Search } from '@element-plus/icons-vue'
 import { useMainStore } from '../store/main';
+import * as monaco from 'monaco-editor';
 
 const dialogVisible = ref(false)
 const dialogMessage = ref('')
 const { table } = defineProps(['table'])
 const store = useMainStore()
+const editorRef = ref(null)
+let instance: monaco.editor.IStandaloneCodeEditor
+watch(dialogVisible, () => {
+    if (dialogVisible.value) {
+        nextTick(() => {
+            if (!instance) {
+                instance = monaco.editor.create(editorRef.value!, {
+                    fontLigatures: true,
+                    fontSize: 14
+                })
+            }
+            instance!.setValue(dialogMessage.value)
+        })
+    }
+})
 </script>
 
 <style>
 .el-form-item {
     margin-bottom: 12px;
+}
+
+.editor {
+    height: 300px;
 }
 </style>

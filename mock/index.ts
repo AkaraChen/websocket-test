@@ -9,6 +9,8 @@ wss.on('connection', (ws) => {
         ws.send(`Count: ${++count}`)
     }, 1000)
     ws.on('message', (data) => {
-        ws.send(data)
+        ws.send(data.toString())
     })
 })
+
+console.log(`Listen at ws://localhost:8080`)
