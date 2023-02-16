@@ -9,7 +9,7 @@ specifiers:
   monaco-editor: ^0.35.0
   pinia: 2.0.30
   typescript: 4.9.5
-  unplugin-auto-import: 0.14.2
+  unplugin-auto-import: 0.14.3
   unplugin-element-plus: 0.6.0
   unplugin-vue-components: 0.23.0
   vite: 4.1.1
@@ -31,7 +31,7 @@ devDependencies:
   '@vitejs/plugin-vue': 4.0.0_vite@4.1.1+vue@3.2.47
   esno: 0.16.3
   typescript: 4.9.5
-  unplugin-auto-import: 0.14.2
+  unplugin-auto-import: 0.14.3
   unplugin-element-plus: 0.6.0
   unplugin-vue-components: 0.23.0_vue@3.2.47
   vite: 4.1.1
@@ -2071,8 +2071,8 @@ packages:
       - rollup
     dev: true
 
-  /unplugin-auto-import/0.14.2:
-    resolution: {integrity: sha512-6DptcCD+bKlxwK0yS4ehleZTvtG4Xl9k/XxhKWxc9ii2uE28HvcA3KbYpoHAzTlHDXRBrtcCAohR8vtIRB5bfg==}
+  /unplugin-auto-import/0.14.3:
+    resolution: {integrity: sha512-6eCHLnsOPwLjNZHQkb95S5jbTWW2JH/jKiQUzTeWJAb8XFpDFZPEhxDeIDAr7HOF76Nz6EGhKF8PQduzygdICg==}
     engines: {node: '>=14'}
     peerDependencies:
       '@vueuse/core': '*'
