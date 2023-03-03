@@ -10,7 +10,7 @@
     "mock": "esno mock"
   },
   "dependencies": {
-    "element-plus": "2.2.32",
+    "element-plus": "2.2.33",
     "monaco-editor": "^0.36.0",
     "pinia": "2.0.32",
     "vue": "3.2.47"
