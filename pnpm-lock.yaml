@@ -7,7 +7,7 @@ specifiers:
   element-plus: 2.2.33
   esno: ^0.16.3
   monaco-editor: ^0.36.0
-  pinia: 2.0.32
+  pinia: 2.0.33
   typescript: 4.9.5
   unplugin-auto-import: 0.15.0
   unplugin-element-plus: 0.7.0
@@ -22,7 +22,7 @@ specifiers:
 dependencies:
   element-plus: 2.2.33_vue@3.2.47
   monaco-editor: 0.36.0
-  pinia: 2.0.32_hmuptsblhheur2tugfgucj7gc4
+  pinia: 2.0.33_hmuptsblhheur2tugfgucj7gc4
   vue: 3.2.47
 
 devDependencies:
@@ -2063,8 +2063,8 @@ packages:
       - encoding
       - supports-color
 
-  /pinia/2.0.32_hmuptsblhheur2tugfgucj7gc4:
-    resolution: {integrity: sha512-8Tw4OrpCSJ028UUyp0gYPP/wyjigLoEceuO/x1G+FlHVf73337e5vLm4uDmrRIoBG1hvaed/eSHnrCFjOc4nkA==}
+  /pinia/2.0.33_hmuptsblhheur2tugfgucj7gc4:
+    resolution: {integrity: sha512-HOj1yVV2itw6rNIrR2f7+MirGNxhORjrULL8GWgRwXsGSvEqIQ+SE0MYt6cwtpegzCda3i+rVTZM+AM7CG+kRg==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
