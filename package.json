@@ -24,7 +24,7 @@
     "unplugin-auto-import": "0.15.1",
     "unplugin-element-plus": "0.7.0",
     "unplugin-vue-components": "0.24.1",
-    "vite": "4.1.4",
+    "vite": "4.2.0",
     "vite-plugin-monaco-editor": "^1.1.0",
     "vue-tsc": "1.2.0",
     "wc-github-corners": "0.1.5",
