@@ -7,7 +7,7 @@ specifiers:
   element-plus: 2.3.0
   esno: ^0.16.3
   monaco-editor: ^0.36.0
-  pinia: 2.0.33
+  pinia: 2.1.4
   typescript: 5.0.2
   unplugin-auto-import: 0.15.1
   unplugin-element-plus: 0.7.0
@@ -22,7 +22,7 @@ specifiers:
 dependencies:
   element-plus: 2.3.0_vue@3.2.47
   monaco-editor: 0.36.0
-  pinia: 2.0.33_p4srtwdgezcoeovfcc2yxzvaue
+  pinia: 2.1.4_p4srtwdgezcoeovfcc2yxzvaue
   vue: 3.2.47
 
 devDependencies:
@@ -649,7 +649,7 @@ packages:
       '@types/web-bluetooth': 0.0.15
       '@vueuse/metadata': 9.2.0
       '@vueuse/shared': 9.2.0_vue@3.2.47
-      vue-demi: 0.13.11_vue@3.2.47
+      vue-demi: 0.14.5_vue@3.2.47
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -662,7 +662,7 @@ packages:
   /@vueuse/shared/9.2.0_vue@3.2.47:
     resolution: {integrity: sha512-NnRp/noSWuXW0dKhZK5D0YLrDi0nmZ18UeEgwXQq7Ul5TTP93lcNnKjrHtd68j2xFB/l59yPGFlCryL692bnrA==}
     dependencies:
-      vue-demi: 0.13.11_vue@3.2.47
+      vue-demi: 0.14.5_vue@3.2.47
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
@@ -1374,12 +1374,12 @@ packages:
       - encoding
       - supports-color
 
-  /pinia/2.0.33_p4srtwdgezcoeovfcc2yxzvaue:
-    resolution: {integrity: sha512-HOj1yVV2itw6rNIrR2f7+MirGNxhORjrULL8GWgRwXsGSvEqIQ+SE0MYt6cwtpegzCda3i+rVTZM+AM7CG+kRg==}
+  /pinia/2.1.4_p4srtwdgezcoeovfcc2yxzvaue:
+    resolution: {integrity: sha512-vYlnDu+Y/FXxv1ABo1vhjC+IbqvzUdiUC3sfDRrRyY2CQSrqqaa+iiHmqtARFxJVqWQMCJfXx1PBvFs9aJVLXQ==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
       typescript: '>=4.4.4'
-      vue: ^2.6.14 || ^3.2.0
+      vue: ^2.6.14 || ^3.3.0
     peerDependenciesMeta:
       '@vue/composition-api':
         optional: true
@@ -1389,7 +1389,7 @@ packages:
       '@vue/devtools-api': 6.5.0
       typescript: 5.0.2
       vue: 3.2.47
-      vue-demi: 0.13.11_vue@3.2.47
+      vue-demi: 0.14.5_vue@3.2.47
     dev: false
 
   /pkg-types/1.0.2:
@@ -1663,8 +1663,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vue-demi/0.13.11_vue@3.2.47:
-    resolution: {integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==}
+  /vue-demi/0.14.5_vue@3.2.47:
+    resolution: {integrity: sha512-o9NUVpl/YlsGJ7t+xuqJKx8EBGf1quRhCiT6D/J0pfwmk9zUwYkC7yrF4SZCe6fETvSM3UNL2edcbYrSyc4QHA==}
     engines: {node: '>=12'}
     hasBin: true
     requiresBuild: true
