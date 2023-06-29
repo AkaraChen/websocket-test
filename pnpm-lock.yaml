@@ -8,7 +8,7 @@ specifiers:
   esno: ^0.16.3
   monaco-editor: ^0.36.0
   pinia: 2.0.33
-  typescript: 5.0.2
+  typescript: 5.1.6
   unplugin-auto-import: 0.15.1
   unplugin-element-plus: 0.7.0
   unplugin-vue-components: 0.24.1
@@ -22,7 +22,7 @@ specifiers:
 dependencies:
   element-plus: 2.3.0_vue@3.2.47
   monaco-editor: 0.36.0
-  pinia: 2.0.33_p4srtwdgezcoeovfcc2yxzvaue
+  pinia: 2.0.33_jfzs7zhison7wfyhu2se5lv4zm
   vue: 3.2.47
 
 devDependencies:
@@ -30,13 +30,13 @@ devDependencies:
   '@types/ws': 8.5.4
   '@vitejs/plugin-vue': 4.1.0_vite@4.2.0+vue@3.2.47
   esno: 0.16.3
-  typescript: 5.0.2
+  typescript: 5.1.6
   unplugin-auto-import: 0.15.1
   unplugin-element-plus: 0.7.0
   unplugin-vue-components: 0.24.1_vue@3.2.47
   vite: 4.2.0
   vite-plugin-monaco-editor: 1.1.0_monaco-editor@0.36.0
-  vue-tsc: 1.2.0_typescript@5.0.2
+  vue-tsc: 1.2.0_typescript@5.1.6
   wc-github-corners: 0.1.5
   ws: 8.12.0
 
@@ -1374,7 +1374,7 @@ packages:
       - encoding
       - supports-color
 
-  /pinia/2.0.33_p4srtwdgezcoeovfcc2yxzvaue:
+  /pinia/2.0.33_jfzs7zhison7wfyhu2se5lv4zm:
     resolution: {integrity: sha512-HOj1yVV2itw6rNIrR2f7+MirGNxhORjrULL8GWgRwXsGSvEqIQ+SE0MYt6cwtpegzCda3i+rVTZM+AM7CG+kRg==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
@@ -1387,7 +1387,7 @@ packages:
         optional: true
     dependencies:
       '@vue/devtools-api': 6.5.0
-      typescript: 5.0.2
+      typescript: 5.1.6
       vue: 3.2.47
       vue-demi: 0.13.11_vue@3.2.47
     dev: false
@@ -1519,9 +1519,9 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /typescript/5.0.2:
-    resolution: {integrity: sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==}
-    engines: {node: '>=12.20'}
+  /typescript/5.1.6:
+    resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
+    engines: {node: '>=14.17'}
     hasBin: true
 
   /ufo/1.1.0:
@@ -1685,7 +1685,7 @@ packages:
       he: 1.2.0
     dev: true
 
-  /vue-tsc/1.2.0_typescript@5.0.2:
+  /vue-tsc/1.2.0_typescript@5.1.6:
     resolution: {integrity: sha512-rIlzqdrhyPYyLG9zxsVRa+JEseeS9s8F2BbVVVWRRsTZvJO2BbhLEb2HW3MY+DFma0378tnIqs+vfTzbcQtRFw==}
     hasBin: true
     peerDependencies:
@@ -1693,7 +1693,7 @@ packages:
     dependencies:
       '@volar/vue-language-core': 1.2.0
       '@volar/vue-typescript': 1.2.0
-      typescript: 5.0.2
+      typescript: 5.1.6
     dev: true
 
   /vue/3.2.47:
