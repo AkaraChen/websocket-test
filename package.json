@@ -21,7 +21,7 @@
     "@vitejs/plugin-vue": "4.1.0",
     "esno": "^0.16.3",
     "typescript": "5.0.2",
-    "unplugin-auto-import": "0.15.1",
+    "unplugin-auto-import": "0.16.6",
     "unplugin-element-plus": "0.7.0",
     "unplugin-vue-components": "0.24.1",
     "vite": "4.2.0",
