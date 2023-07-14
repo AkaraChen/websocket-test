@@ -4,7 +4,7 @@ specifiers:
   '@element-plus/icons-vue': 2.1.0
   '@types/ws': ^8.5.4
   '@vitejs/plugin-vue': 4.1.0
-  element-plus: 2.3.0
+  element-plus: 2.3.8
   esno: ^0.16.3
   monaco-editor: ^0.36.0
   pinia: 2.0.33
@@ -20,7 +20,7 @@ specifiers:
   ws: ^8.12.0
 
 dependencies:
-  element-plus: 2.3.0_vue@3.2.47
+  element-plus: 2.3.8_vue@3.2.47
   monaco-editor: 0.36.0
   pinia: 2.0.33_p4srtwdgezcoeovfcc2yxzvaue
   vue: 3.2.47
@@ -767,8 +767,8 @@ packages:
   /deprecation/2.3.1:
     resolution: {integrity: sha512-xmHIy4F3scKVwMsQ4WnVaS8bHOx0DmVwRywosKhaILI0ywMDWPtBSku2HNxRvF7jtwDRsoEwYQSfbxj8b7RlJQ==}
 
-  /element-plus/2.3.0_vue@3.2.47:
-    resolution: {integrity: sha512-3s3JO4+LHLi61tFwF2emIHx6nxwKKdj5YWcj3GUBoXKhbuRjhq6xqaxWpBlPk7jySr/8Eci5++T2THbvrpGn7A==}
+  /element-plus/2.3.8_vue@3.2.47:
+    resolution: {integrity: sha512-yHQR0/tG2LvPkpGUt7Te/hPmP2XW/BytBNUbx+EFO54VnGCOE3upmQcVffNp1PLgwg9sthYDXontUWpnpmLPJw==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
