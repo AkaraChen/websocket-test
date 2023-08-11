@@ -11,7 +11,11 @@ const host = ref('localhost')
 const port = ref('8080')
 const endpoint = ref('')
 const param = ref('')
-const uri = computed(() => `${useWSS.value ? 'wss' : 'ws'}://${host.value}:${port.value}/${endpoint.value}?${param.value}`)
+const paramStr = computed(() => {
+    if (param.value === '') return param.value
+    return `?${param.value}`
+})
+const uri = computed(() => `${useWSS.value ? 'wss' : 'ws'}://${host.value}:${port.value}/${endpoint.value}${paramStr.value}`)
 const textarea = ref('')
 const store = useMainStore()
 const getTimeString = (): string => {
