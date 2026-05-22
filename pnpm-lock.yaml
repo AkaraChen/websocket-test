@@ -53,8 +53,8 @@ devDependencies:
     specifier: 1.2.0
     version: 1.2.0(typescript@5.0.2)
   wc-github-corners:
-    specifier: 0.1.5
-    version: 0.1.5
+    specifier: 0.1.6
+    version: 0.1.6
   ws:
     specifier: ^8.13.0
     version: 8.13.0
@@ -1350,8 +1350,8 @@ packages:
       '@vue/server-renderer': 3.2.47(vue@3.2.47)
       '@vue/shared': 3.2.47
 
-  /wc-github-corners@0.1.5:
-    resolution: {integrity: sha512-XLSfNhJPp9PFT6yRLV+aGiSVhetzY3uuRvg6zKsVEThC47s4Um/z27FfJcFQ1R8DaWrG0Gt00Vrn3jj4BlDmPw==}
+  /wc-github-corners@0.1.6:
+    resolution: {integrity: sha512-i5stIsQWV4kh24/4cU1FnsA8cWLRVm1JK9w8HdeZQHQob/7q1pBMaBGzAyB5h2VTtRn1UqI4qbPbzgFdnziwBQ==}
     dependencies:
       lit: 2.8.0
     dev: true
