@@ -13,7 +13,7 @@
     "element-plus": "2.3.0",
     "monaco-editor": "^0.36.1",
     "pinia": "2.0.33",
-    "vue": "3.2.47"
+    "vue": "3.5.42"
   },
   "devDependencies": {
     "@element-plus/icons-vue": "2.1.0",
